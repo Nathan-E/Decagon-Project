@@ -1,2 +1,2 @@
 # Decagon-Project
-P &amp; I Mgt Sys.
+Product &amp; Inventory Management System.
