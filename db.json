@@ -1,29 +1,21 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 2,
-      "title": "json-ferver",
-      "author": "ctypicode"
-    },
-    {
-      "id": 3,
-      "title": "json-ferjver",
-      "author": "ctynpicode"
+      "cName": "huihuh",
+      "regNo": "houho",
+      "cAddress": "houho",
+      "email": "houho",
+      "password": "u o ",
+      "id": 3
     }
   ],
-  "comments": [
+  "products": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "productName": "ooiuyhhhhuh",
+      "category": "Electronics",
+      "stock": "889",
+      "unitPrice": "89",
+      "id": 1
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
