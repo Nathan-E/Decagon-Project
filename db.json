@@ -9,5 +9,13 @@
       "id": 3
     }
   ],
-  "products": []
+  "products": [
+    {
+      "productName": "ooiuyhhhhuh",
+      "category": "Electronics",
+      "stock": "889",
+      "unitPrice": "89",
+      "id": 1
+    }
+  ]
 }
