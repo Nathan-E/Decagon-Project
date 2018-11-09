@@ -36,31 +36,3 @@ $(document).ready(function(){
         create(user);
       })
 })
-
-function get() {
-    let url = 'http://localhost:3000/product/';
-    $.get(rl,function () {
-
-    });
-    
-    const xhr = new XMLHttpRequest();
-    xhr.responseType = 'json';
-  
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        renderResponse(xhr.response);
-      }
-    }
-    xhr.open('GET', url);
-    xhr.send();
-  }
-  // Formats response to look presentable on webpage
-const renderResponse = (res) => {
-    let inventory = []
-    for(let i = 0; i < res.length; i++){
-      inventory.push(``)
-    wordList = wordList.join("")
-    responseField.innerHTML = `<p>You might be interested in:</p><ol>${wordList}</ol>`
-    return
-  }
-}

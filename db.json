@@ -6,16 +6,45 @@
       "cAddress": "houho",
       "email": "houho",
       "password": "u o ",
-      "id": 3
+      "id": 1
+    },
+    {
+      "cName": "huihuh",
+      "regNo": "houho",
+      "cAddress": "houho",
+      "email": "houho",
+      "password": "u o ",
+      "id": 2
     }
   ],
   "products": [
     {
-      "productName": "ooiuyhhhhuh",
+      "id": 1,
+      "productName": "urieuriero",
       "category": "Electronics",
-      "stock": "889",
-      "unitPrice": "89",
-      "id": 1
+      "stock": "78",
+      "unitPrice": "7"
+    },
+    {
+      "id": 2,
+      "productName": "vwjweoi",
+      "category": "Electronics",
+      "stock": "23",
+      "unitPrice": "98"
+    },
+    {
+      "id": 3,
+      "productName": "23332d",
+      "category": "Electronics",
+      "stock": "oll",
+      "unitPrice": "990"
+    },
+    {
+      "id": 4,
+      "productName": "oaiwid",
+      "category": "Electronics",
+      "stock": "80999",
+      "unitPrice": ""
     }
   ]
 }

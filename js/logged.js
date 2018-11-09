@@ -1,8 +1,9 @@
 $(document).ready(function(){
-    $.get( "'http://localhost:3000/product/'", function( data ) {
-    $( "#table" )
-        .append( '<tr>'+'<td>' + data.productName + '</td>' + '<td>' + data.category + '</td>'+ '<td>' + data.stock + '</td>'+ '<td>' + data.unitPrice + '</td>'+'<tr>');
-    }, "json" );
+    $.get( "http://localhost:3000/products", function( data ) {
+        for( i in data){
+            $( "#table" ).append( '<tr>'+'<td>' + data[i].productName + '</td>' + '<td>' + data[i].category + '</td>'+ '<td>' + data[i].stock + '</td>'+ '<td>' + data[i].unitPrice + '</td>'+'<tr>');
+    }}, "json" );
+
     var uniqId = (function(){
         var i=0;
         return function() {
@@ -38,6 +39,5 @@ $(document).ready(function(){
         //$('#heading').append('<th>'+ 'Product Name'+'</th>'+'<th>' + 'Category' +'</th>'+'<th>'+ 'Stock' +'</th>'+'<th>'+'Unit Price'+'</th>')
         $('#table').append( '<tr>'+'<td>' + a + '</td>' + '<td>' + b + '</td>'+ '<td>' + c + '</td>'+ '<td>' + d + '</td>'+'<tr>')
     })
-    
     
 })
