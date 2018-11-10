@@ -24,14 +24,14 @@ $(document).ready(function(){
         return fetch(baseUrl, options)
           .then((response) => response.json)
     }
-    
     $("#signup").click(function() {
         var a = $("#name").val();
         var b = $("#number").val()
         var c = $("#address").val();
-        var d = $("#address").val();
+        var d = $("#email").val();
         var e = $("#pass").val();
-        let user = new User(a ,b , c, d, e)
+        let user = new User(a ,b , c, d, e);
+        console.log(e);
         baseUrl = "http://localhost:3000/users";
         create(user);
       })
