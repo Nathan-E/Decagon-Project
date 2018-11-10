@@ -9,14 +9,6 @@
       "id": 1
     },
     {
-      "cName": "huihuh",
-      "regNo": "houho",
-      "cAddress": "houho",
-      "email": "houho",
-      "password": "u o ",
-      "id": 2
-    },
-    {
       "id": 3,
       "cName": "Kashim Plc",
       "regNo": "RC 747849",
@@ -25,32 +17,12 @@
       "password": "123"
     },
     {
-      "id": 4,
-      "cName": "sdfffgghh",
-      "regNo": "dedhrfhgh h",
-      "cAddress": "trytyu",
-      "password": "plm"
-    },
-    {
-      "id": 5,
-      "cName": "retfjkkk",
-      "regNo": "weedh",
-      "cAddress": "ewfyyumiu",
-      "password": "1234"
-    },
-    {
-      "id": 6,
-      "cName": "5yye5rvv",
-      "regNo": "45c6u56i6v",
-      "cAddress": "c675u6756vi",
-      "password": "vbnm"
-    },
-    {
       "id": 7,
-      "cName": "wwwww",
-      "regNo": "sssss",
-      "cAddress": "xxxxx",
-      "password": "1111"
+      "cName": "ety",
+      "regNo": "jjppojo",
+      "cAddress": "hty ",
+      "email": "jhikk",
+      "password": "mlmp"
     },
     {
       "id": 8,
@@ -59,22 +31,6 @@
       "cAddress": "Basw3w",
       "email": "cenio@gmail.com",
       "password": "12345"
-    },
-    {
-      "id": 9,
-      "cName": "nbjkh.i",
-      "regNo": "okpko",
-      "cAddress": "tfyt",
-      "email": "",
-      "password": "iop"
-    },
-    {
-      "id": 10,
-      "cName": "ety",
-      "regNo": "jjppojo",
-      "cAddress": "hty ",
-      "email": ",jhikk",
-      "password": "mlmp"
     }
   ],
   "products": [
