@@ -15,29 +15,32 @@
       "cAddress": "Ilupeju",
       "email": "cenio@gmail.com",
       "password": "qwe"
+    },
+    {
+      "id": 3,
+      "cName": "Andela",
+      "regNo": "RC445",
+      "cAddress": "ILUPEJU",
+      "email": "siko@gmail.com",
+      "password": "pol"
     }
   ],
   "products": [
     {
       "id": 1,
-      "productName": "iPhone",
-      "category": "Computers",
-      "stock": "100",
-      "unitPrice": "1000"
+      "productName": "Jeans",
+      "category": "Clothing",
+      "stock": "12",
+      "unitPrice": "1",
+      "userId": 3
     },
     {
       "id": 2,
-      "productName": "Eva",
-      "category": "Wines",
-      "stock": "900",
-      "unitPrice": "500"
-    },
-    {
-      "id": 3,
-      "productName": "Jeans",
-      "category": "Clothing",
-      "stock": "889",
-      "unitPrice": "450"
+      "productName": "Iron",
+      "category": "Electronics",
+      "stock": "90",
+      "unitPrice": "100",
+      "userId": 3
     }
   ]
 }
