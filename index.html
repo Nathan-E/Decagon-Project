@@ -13,7 +13,7 @@
     <script src="./js/signin.js"></script>
 </head>
 <body>
-    <div class = "">
+    <div class = "container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">WAREboot</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -23,7 +23,56 @@
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                        <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Sign Up
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Create Company Account</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                <div class="form-group">
+                                    <label for="firstname">Company's Name</label> <br>
+                                    <div><input id="name" type="text" class="form-control" placeholder="Company's Name"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstname">Company Registration Number</label>
+                                    <input id="number" type="text" class="form-control" placeholder="Registration No">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input id="address" type="text" class="form-control" placeholder="Company's Address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input id="pass" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Confirm Password</label>
+                                    <input  type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-enter Password">
+                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="signup" type="submit" class="btn btn-primary" data-dismiss="modal">Sign Up</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 <!-- Button trigger modal Sign In -->
                 <button id="signin" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Sign In
@@ -109,56 +158,7 @@
             <h3>Why do we use it?</h3>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
         </div>
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Sign Up
-      </button>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">Create Company Account</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                <div class="form-group">
-                    <label for="firstname">Company's Name</label>
-                    <input id="name" type="text" class="form-control" placeholder="Company's Name">
-                </div>
-                <div class="form-group">
-                    <label for="firstname">Company Registration Number</label>
-                    <input id="number" type="text" class="form-control" placeholder="Registration No">
-                </div>
-                <div class="form-group">
-                    <label for="address">Address</label>
-                    <input id="address" type="text" class="form-control" placeholder="Company's Address">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input id="pass" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Confirm Password</label>
-                    <input  type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-enter Password">
-                </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button id="signup" type="submit" class="btn btn-primary" data-dismiss="modal">Sign Up</button>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
     </div>
     <div class="footer">

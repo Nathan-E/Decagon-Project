@@ -1,66 +1,43 @@
 {
   "users": [
     {
-      "cName": "huihuh",
-      "regNo": "houho",
-      "cAddress": "houho",
-      "email": "houho",
-      "password": "u o ",
-      "id": 1
-    },
-    {
-      "id": 3,
-      "cName": "Kashim Plc",
-      "regNo": "RC 747849",
-      "cAddress": "Air Base",
-      "email": "Air Base",
-      "password": "123"
-    },
-    {
-      "id": 7,
-      "cName": "ety",
-      "regNo": "jjppojo",
-      "cAddress": "hty ",
-      "email": "jhikk",
-      "password": "mlmp"
-    },
-    {
-      "id": 8,
-      "cName": "chibueze",
-      "regNo": "RC 8282",
-      "cAddress": "Basw3w",
-      "email": "cenio@gmail.com",
+      "id": 1,
+      "cName": "Eureka",
+      "regNo": "RC123",
+      "cAddress": "Ilupeju",
+      "email": "ziks@gmail.com",
       "password": "12345"
+    },
+    {
+      "id": 2,
+      "cName": "jenkins",
+      "regNo": "RC677",
+      "cAddress": "Ilupeju",
+      "email": "cenio@gmail.com",
+      "password": "qwe"
     }
   ],
   "products": [
     {
       "id": 1,
-      "productName": "urieuriero",
-      "category": "Electronics",
-      "stock": "78",
-      "unitPrice": "7"
+      "productName": "iPhone",
+      "category": "Computers",
+      "stock": "100",
+      "unitPrice": "1000"
     },
     {
       "id": 2,
-      "productName": "vwjweoi",
-      "category": "Electronics",
-      "stock": "23",
-      "unitPrice": "98"
+      "productName": "Eva",
+      "category": "Wines",
+      "stock": "900",
+      "unitPrice": "500"
     },
     {
       "id": 3,
-      "productName": "23332d",
-      "category": "Electronics",
-      "stock": "oll",
-      "unitPrice": "990"
-    },
-    {
-      "id": 4,
-      "productName": "oaiwid",
-      "category": "Electronics",
-      "stock": "80999",
-      "unitPrice": ""
+      "productName": "Jeans",
+      "category": "Clothing",
+      "stock": "889",
+      "unitPrice": "450"
     }
   ]
 }
