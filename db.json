@@ -41,6 +41,54 @@
       "stock": "90",
       "unitPrice": "100",
       "userId": 3
+    },
+    {
+      "id": 3,
+      "productName": "Cup",
+      "category": "Computers",
+      "stock": "900",
+      "unitPrice": "9",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "productName": "Shirt",
+      "category": "Clothing",
+      "stock": "900",
+      "unitPrice": "78",
+      "userId": 3
+    },
+    {
+      "id": 5,
+      "productName": "Singlet",
+      "category": "Clothing",
+      "stock": "9000",
+      "unitPrice": "8",
+      "userId": 3
+    },
+    {
+      "id": 6,
+      "productName": "Boxers",
+      "category": "Clothing",
+      "stock": "7700",
+      "unitPrice": "90",
+      "userId": 3
+    },
+    {
+      "id": 7,
+      "productName": "Trouser",
+      "category": "Clothing",
+      "stock": "780",
+      "unitPrice": "9",
+      "userId": 3
+    },
+    {
+      "id": 8,
+      "productName": "Dell Laptop",
+      "category": "Computers",
+      "stock": "45",
+      "unitPrice": "87",
+      "userId": 2
     }
   ]
 }

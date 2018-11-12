@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("#login").click(function() {
     let ema = $("#email1").val();
     let pas = $("#pass1").val();
+     
     $.get(
       "http://localhost:3000/users?email=" + ema,
       function(data) {
@@ -11,7 +12,7 @@ $(document).ready(function() {
           localStorage.setItem("userDetails", JSON.stringify(data[0]));
           window.location.href = "./pages/logged.html";
         } else {
-          alert("hhey");
+          alert("incorrect login");
         }
       },
       "json"
@@ -19,4 +20,4 @@ $(document).ready(function() {
   });
 });
 
-//window.location.replace("http://www.w3schools.com")
+
