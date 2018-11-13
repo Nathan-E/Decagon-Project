@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.eslintIntegration": true,
+    "javascript.format.enable": false,
+    "files.autoSave": "afterDelay"
+}
