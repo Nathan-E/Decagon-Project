@@ -23,6 +23,14 @@
       "cAddress": "ILUPEJU",
       "email": "siko@gmail.com",
       "password": "pol"
+    },
+    {
+      "id": 4,
+      "cName": "NewHope",
+      "regNo": "RC567",
+      "cAddress": "onitsha",
+      "email": "xi@gmail.com",
+      "password": "polm"
     }
   ],
   "products": [
@@ -35,20 +43,60 @@
       "userId": 2
     },
     {
-      "id": 2,
-      "productName": "Dell Laptop",
-      "category": "Computers",
+      "id": 1,
+      "productName": "Screen",
+      "category": "Wines",
       "stock": "500",
-      "unitPrice": "75",
+      "unitPrice": "90",
+      "userId": "3"
+    },
+    {
+      "productName": "Batteries",
+      "category": "Electronics",
+      "stock": "750",
+      "unitPrice": "350",
+      "id": 2,
       "userId": 3
     },
     {
+      "id": 4,
+      "productName": "Shoe",
+      "category": "Clothing",
+      "stock": "1200",
+      "unitPrice": "5",
+      "userId": "3"
+    },
+    {
+      "id": 12,
+      "productName": "Trouser",
+      "category": "Clothing",
+      "stock": "123",
+      "unitPrice": "5",
+      "userId": "3"
+    },
+    {
       "id": 3,
-      "productName": "Jeans",
+      "productName": "Cap",
       "category": "Clothing",
       "stock": "500",
-      "unitPrice": "75",
-      "userId": 3
+      "unitPrice": "5",
+      "userId": "3"
+    },
+    {
+      "id": 14,
+      "productName": "Phone",
+      "category": "Electronics",
+      "stock": "1000",
+      "unitPrice": "500",
+      "userId": "3"
+    },
+    {
+      "id": 15,
+      "productName": "Plug",
+      "category": "Computers",
+      "stock": "600",
+      "unitPrice": "45",
+      "userId": "3"
     }
   ]
 }

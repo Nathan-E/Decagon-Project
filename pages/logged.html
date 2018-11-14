@@ -9,6 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="../style/logged.css" />
     <script src="../js/logged.js"></script>
+    <!-- <script>console.log("hello")</script> -->
+    <!-- <script src="./js/delete.js"></script> -->
 </head>
 <body>
     <div class="topnav">
@@ -36,7 +38,7 @@
             </div>
             <div class="form-group">
                 <label for="firstname">Category</label>
-                <select id="cat" class="form-control" name="category" id="">
+                <select id="cate" class="form-control" name="category" id="">
                     <option value="Electronics">Electronics</option>
                     <option value="Wines">Wines</option>
                     <option value="Computers">Computers and Accessories</option>
@@ -45,7 +47,7 @@
             </div>
             <div class="form-group">
                 <label for="Number of items">Number of Items</label>
-                <input id="stock" type="text" class="form-control" placeholder="Number of Items">
+                <input id="stock" type="number" class="form-control" placeholder="Number of Items">
             </div>
             <div class="form-group">
                 <label for="price">Unit Price</label>
@@ -75,11 +77,56 @@
                 <th>Category</th>
                 <th>Stock</th>
                 <th>Unit Price</th>
-                <th>Edit</th>
+                <th>Delete</th>
+                <th>Update</th>
             </tr>
         </table>
     </div>
     </div>
+    </div>
+    <div>
+            <!-- Modal -->
+    <div class="modal fade" id="example" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Update Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="form-group">
+                        <label for="firstname">Product's Name</label>
+                        <input id="productN" type="text" class="form-control" placeholder="Product's Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">Category</label>
+                        <!-- <input id="cate" type="text" class="form-control" placeholder="Category"> -->
+                        <select id="categ" class="form-control" name="category">
+                            <option value="Electronics">Electronics</option>
+                            <option value="Wines">Wines</option>
+                            <option value="Computers">Computers and Accessories</option>
+                            <option value="Clothing">Clothing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Number of items">Number of Items</label>
+                        <input id="stockNum" type="number" class="form-control" placeholder="Number of Items">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Unit Price</label>
+                        <input id="unitPri" type="number" class="form-control"  placeholder="Enter the Unit Price">
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="update" type="submit" class="btn btn-primary" data-dismiss="modal">Update</button>
+                </div>
+                </div>
+            </div>
+            </div>
     </div>
       
     <div class="footer">

@@ -12,7 +12,7 @@ $(document).ready(function() {
           localStorage.setItem("userDetails", JSON.stringify(data[0]));
           window.location.href = "./pages/logged.html";
         } else {
-          alert("incorrect login");
+          alert("incorrect login details");
         }
       },
       "json"
