@@ -19,6 +19,27 @@
     float: right;
     background-color: black;
 }
+.row {
+    float: left;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+/* Left column */
+.col-8 {
+    width: 75%
+}
+
+/* right column */
+.col-4 {
+    width: 25%;
+    float: right;
+    height: 700;
+    padding-top: 25px;
+}
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
@@ -36,13 +57,7 @@
     display: none;
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
+
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {

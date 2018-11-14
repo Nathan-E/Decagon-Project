@@ -23,6 +23,14 @@
       "cAddress": "ILUPEJU",
       "email": "siko@gmail.com",
       "password": "pol"
+    },
+    {
+      "id": 4,
+      "cName": "NewHope",
+      "regNo": "RC567",
+      "cAddress": "onitsha",
+      "email": "xi@gmail.com",
+      "password": "polm"
     }
   ],
   "products": [
@@ -33,22 +41,6 @@
       "stock": "45",
       "unitPrice": "87",
       "userId": 2
-    },
-    {
-      "id": 2,
-      "productName": "Dell Laptop",
-      "category": "Computers",
-      "stock": "500",
-      "unitPrice": "75",
-      "userId": 3
-    },
-    {
-      "id": 3,
-      "productName": "Jeans",
-      "category": "Clothing",
-      "stock": "500",
-      "unitPrice": "75",
-      "userId": 3
     }
   ]
 }
