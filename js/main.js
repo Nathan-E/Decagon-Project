@@ -25,15 +25,25 @@ $(document).ready(function(){
           .then((response) => response.json)
     }
     $("#signup").click(function() {
-        var a = $("#name").val();
-        var b = $("#number").val()
-        var c = $("#address").val();
-        var d = $("#email").val();
-        var e = $("#pass").val();
+        const a = $("#name").val();
+        const b = $("#number").val()
+        const c = $("#address").val();
+        const d = $("#email").val();
+        const e = $("#pass").val();
+        const f = $("#cpass").val();
+
+        if (a  == "" || b == "" || c == "" || d == "" || e == ""  ) {
+            alert("Please fill in all the fields");
+        } else if (  ) {
+
+        } else if ( e !== f) {
+            //$( "#cpass" ).append( "<div><small>The password fields does not match</small></div>")
+            alert("The password fields does not match");
+        } else {
+            let user = new User(a ,b , c, d, e);
+            baseUrl = "http://localhost:3000/users";
+            create(user);
+        }
          
-        let user = new User(a ,b , c, d, e);
-        console.log(e);
-        baseUrl = "http://localhost:3000/users";
-        create(user);
       })
 })

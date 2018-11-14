@@ -31,6 +31,14 @@
       "cAddress": "onitsha",
       "email": "xi@gmail.com",
       "password": "polm"
+    },
+    {
+      "id": 5,
+      "cName": "Baker Hughes",
+      "regNo": "RC1234",
+      "cAddress": "Onne",
+      "email": "bakerhughes@gmail.com",
+      "password": "1234"
     }
   ],
   "products": [
@@ -45,7 +53,7 @@
     {
       "id": 1,
       "productName": "Screen",
-      "category": "Wines",
+      "category": "Computers",
       "stock": "500",
       "unitPrice": "90",
       "userId": "3"
