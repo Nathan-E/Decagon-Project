@@ -38,7 +38,7 @@
             </div>
             <div class="form-group">
                 <label for="firstname">Category</label>
-                <select id="cat" class="form-control" name="category" id="">
+                <select id="cate" class="form-control" name="category" id="">
                     <option value="Electronics">Electronics</option>
                     <option value="Wines">Wines</option>
                     <option value="Computers">Computers and Accessories</option>
@@ -83,6 +83,49 @@
         </table>
     </div>
     </div>
+    </div>
+    <div>
+            <!-- Modal -->
+    <div class="modal fade" id="example" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Update Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="form-group">
+                        <label for="firstname">Product's Name</label>
+                        <input id="productN" type="text" class="form-control" placeholder="Product's Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">Category</label>
+                        <select id="cat" class="form-control" name="category" id="">
+                            <option value="Electronics">Electronics</option>
+                            <option value="Wines">Wines</option>
+                            <option value="Computers">Computers and Accessories</option>
+                            <option value="Clothing">Clothing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Number of items">Number of Items</label>
+                        <input id="stockNum" type="number" class="form-control" placeholder="Number of Items">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Unit Price</label>
+                        <input id="unitPri" type="number" class="form-control"  placeholder="Enter the Unit Price">
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="update" type="submit" class="btn btn-primary" data-dismiss="modal">Update</button>
+                </div>
+                </div>
+            </div>
+            </div>
     </div>
       
     <div class="footer">

@@ -12,8 +12,8 @@ function productDelete(x) {
     method: "delete",
 
     success: function(response) {
-      alert("deleted")
-      ;
+      alert("deleted");
+      location.reload();
     },
     error: function() {
       alert("error");
@@ -21,26 +21,51 @@ function productDelete(x) {
   });
 }
 
-  function productUpdate(x) {
-
-    let path = `http://localhost:3000/products/${x}`;
-  
-    $.ajax({
-      url: path,
-      method: "delete",
-  
-      success: function(response) {
-        alert("deleted")
-        ;
-      },
-      error: function() {
-        alert("error");
-      }
+  function fillField(x) {
+    $.get(
+      `http://localhost:3000/products/${x}`,
+      function(data) {
+        console.log(data)
+    let v = data.productName;
+    let w = data.category
+    let y = data.stock;
+    let z = data.unitPrice;
+    console.log(x);
+    console.log(y);
+    console.log(z);
+    $('#productN').val(v);
+    $('#cate').val(w);
+    $('#stockNum').val(y);
+    $('#unitPri').val(z);
     });
+
+    function change(data) {
+      let options = {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      };
+      return fetch(baseUrl, options).then(response => response.json);
+    }
+    //Updates a Product
+  $("#update").click(function() {
+    // const userDetails = JSON.parse(localStorage.getItem("userDetails"));
+    // const a = $("#productN").val();
+    // const b = $("#cate").val();
+    // const c = $("#stockNum").val();
+    // const d = $("#unitPri").val();
+    // let product = new Product(a, b, c, d, userDetails.id);
+
+    baseUrl = "http://localhost:3000/products/${x}";
+    change(product);
+  });
 }
 
 $(document).ready(function() {
   const userId = JSON.parse(userDetails).id;
+  
   $.get(
     `http://localhost:3000/products?userId=${userId}`,
     function(data) {
@@ -57,7 +82,7 @@ $(document).ready(function() {
           <td>
           <button type='button' id="${
             data[i].id
-          }" onclick="productUpdate(this.id)">Update</button>
+          }"  onclick="fillField(this.id)" data-toggle="modal" data-target="#example">Update</button>
           </td>
           <tr>`
         );
@@ -65,25 +90,6 @@ $(document).ready(function() {
     },
     "json"
   );
-
-  // function productDelete() {
-  //   console.log("hello world");
-  //   // let id = $(this).attr("id");
-
-  //   let path = `http://localhost:3000/products/${x}`;
-
-  //   $.ajax({
-  //     url: path,
-  //     method: "delete",
-
-  //     success: function(response) {
-  //       alert("deleted");
-  //     },
-  //     error: function() {
-  //       alert("error");
-  //     }
-  //   });
-  // }
 
   $("#log-out").click(() => {
     window.location.href = "../index.html";
@@ -105,6 +111,7 @@ $(document).ready(function() {
     this.unitPrice = unitPrice;
     this.userId = userId;
   }
+
   function create(data) {
     let options = {
       method: "POST",
@@ -115,6 +122,9 @@ $(document).ready(function() {
     };
     return fetch(baseUrl, options).then(response => response.json);
   }
+
+  
+
   $("#addProduct").click(function() {
     const userDetails = JSON.parse(localStorage.getItem("userDetails"));
     const a = $("#nameP").val();
@@ -130,11 +140,17 @@ $(document).ready(function() {
       <td>
       <button type='button' type='button' id='${
         product.id
-      }' onclick='productDelete'()>DEL</button></a>
+      }' onclick='productDelete'(this.id)>Delete</button></a>
+      </td>
+      <td>
+      <button type='button' id="${
+        product.id
+      }" onclick="fillField(this.id)" data-toggle="modal" data-target="#example">Update</button>
       </td>
       <tr>`
     );
   });
+
+  
+
 });
-
-

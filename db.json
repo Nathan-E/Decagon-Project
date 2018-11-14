@@ -41,6 +41,38 @@
       "stock": "45",
       "unitPrice": "87",
       "userId": 2
+    },
+    {
+      "id": 9,
+      "productName": "Iron",
+      "category": "Electronics",
+      "stock": "700",
+      "unitPrice": "80",
+      "userId": 3
+    },
+    {
+      "id": 1,
+      "productName": "Screen",
+      "category": "Electronics",
+      "stock": "1000",
+      "unitPrice": "80",
+      "userId": 3
+    },
+    {
+      "id": 10,
+      "productName": "Keyboard",
+      "category": "Electronics",
+      "stock": "1000",
+      "unitPrice": "500",
+      "userId": 3
+    },
+    {
+      "id": 2,
+      "productName": "Batteries",
+      "category": "Electronics",
+      "stock": "750",
+      "unitPrice": "350",
+      "userId": 3
     }
   ]
 }
