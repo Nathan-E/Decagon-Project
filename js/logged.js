@@ -3,6 +3,7 @@ if (!userDetails) {
   alert("Not logged in");
   window.location.href = "../index.html";
 }
+
 function productDelete(x) {
 
   let path = `http://localhost:3000/products/${x}`;
@@ -12,12 +13,12 @@ function productDelete(x) {
     method: "delete",
 
     success: function(response) {
-      alert("deleted");
       location.reload();
+      // alert("deleted");
     },
-    error: function() {
-      alert("error");
-    }
+    // error: function() {
+    //   alert("error");
+    // }
   });
 }
 
@@ -30,36 +31,40 @@ function productDelete(x) {
     let w = data.category
     let y = data.stock;
     let z = data.unitPrice;
-    console.log(x);
-    console.log(y);
-    console.log(z);
     $('#productN').val(v);
     $('#cate').val(w);
     $('#stockNum').val(y);
     $('#unitPri').val(z);
     });
 
-    function change(data) {
-      let options = {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      };
-      return fetch(baseUrl, options).then(response => response.json);
-    }
     //Updates a Product
   $("#update").click(function() {
-    // const userDetails = JSON.parse(localStorage.getItem("userDetails"));
-    // const a = $("#productN").val();
-    // const b = $("#cate").val();
-    // const c = $("#stockNum").val();
-    // const d = $("#unitPri").val();
-    // let product = new Product(a, b, c, d, userDetails.id);
-
-    baseUrl = "http://localhost:3000/products/${x}";
-    change(product);
+    const userDetails = JSON.parse(localStorage.getItem("userDetails"));
+    const data = {
+      id: x,
+     productName: $("#productN").val(),
+     category: $("#categ").val(),
+     stock: $("#stockNum").val(),
+     unitPrice: $("#unitPri").val(),
+     userId: parseInt(userDetails.id)
+    }
+   // console.log(data)
+    baseUrl = `http://localhost:3000/products/${x}`;
+    
+    $.ajax(
+      {
+        url: baseUrl,
+        method:'PUT',
+        data:data,
+        success:function(response){
+          location.reload();
+          // alert("Updated");
+        },
+        // error:function(){
+        //   alert('Update Aborted')
+        // }
+      }
+    )
   });
 }
 
@@ -128,7 +133,7 @@ $(document).ready(function() {
   $("#addProduct").click(function() {
     const userDetails = JSON.parse(localStorage.getItem("userDetails"));
     const a = $("#nameP").val();
-    const b = $("#cat").val();
+    const b = $("#cate").val();
     const c = $("#stock").val();
     const d = $("#unitP").val();
     let product = new Product(a, b, c, d, userDetails.id);
