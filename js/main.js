@@ -34,8 +34,6 @@ $(document).ready(function(){
 
         if (a  == "" || b == "" || c == "" || d == "" || e == ""  ) {
             alert("Please fill in all the fields");
-        } else if (  ) {
-
         } else if ( e !== f) {
             //$( "#cpass" ).append( "<div><small>The password fields does not match</small></div>")
             alert("The password fields does not match");
