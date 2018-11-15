@@ -38,8 +38,8 @@
       "id": 8,
       "productName": "Dell Laptop",
       "category": "Electronics",
-      "stock": "5",
-      "unitPrice": "977",
+      "stock": "6",
+      "unitPrice": "97",
       "userId": "2"
     },
     {
@@ -111,7 +111,7 @@
       "productName": "Pen",
       "category": "Electronics",
       "stock": "20",
-      "unitPrice": "15",
+      "unitPrice": "10",
       "userId": "2"
     },
     {

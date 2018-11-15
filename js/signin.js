@@ -11,7 +11,7 @@ $(document).ready(function() {
         pas = JSON.stringify(pas);
         if (pas == obj) {
           localStorage.setItem("userDetails", JSON.stringify(data[0]));
-          window.location.href = "./pages/logged.html";
+          window.location.href = "./pages/dashboard.html";
         } else {
           alert("incorrect login details");
         }

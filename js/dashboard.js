@@ -143,16 +143,12 @@ $(document).ready(function() {
     baseUrl = "http://localhost:3000/products";
     create(product);
     $("#table").append(
-      `<tr><td>${a}</td><td>${b}</td><td>${c}</td><td>$${d}</td>
+      `<tr><td>${a}</td><td>${b}</td><td>${c}</td><td>${d}</td>
       <td>
-      <button class='pro-del' type="button"  id="${
-        product.id
-      }" onclick="productDelete(this.id)">Delete</button></a>
+      <button type="button"  id="${product.id}" onclick="productDelete(this.id)">Delete</button>
       </td>
       <td>
-      <button type="button" id="${
-        product.id
-      }" onclick="fillField(this.id)" data-toggle="modal" data-target="#example">Update</button>
+      <button type="button" id="${product.id}" onclick="fillField(this.id)" data-toggle="modal" data-target="#example">Update</button>
       </td>
       <tr>`
     );
