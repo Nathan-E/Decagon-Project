@@ -1,4 +1,4 @@
-
+// Authenticate SignIn data...
 $(document).ready(function() {
   $("#login").click(function() {
     let ema = $("#email1").val();

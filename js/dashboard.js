@@ -1,9 +1,13 @@
+// Authenticates if User is Signed In
 const userDetails = localStorage.getItem("userDetails");
 if (!userDetails) {
   alert("Not logged in");
   window.location.href = "../index.html";
 }
 
+
+
+// Deletes a Product
 function productDelete(x) {
 
   let path = `http://localhost:3000/products/${x}`;
@@ -22,6 +26,7 @@ function productDelete(x) {
   });
 }
 
+// Prefills your form
   function fillField(x) {
     $.get(
       `http://localhost:3000/products/${x}`,
@@ -37,7 +42,7 @@ function productDelete(x) {
     $('#unitPri').val(z);
     });
 
-    //Updates a Product
+  // Updates a Product
   $("#update").click(function() {
     const userDetails = JSON.parse(localStorage.getItem("userDetails"));
     const data = {
@@ -48,7 +53,6 @@ function productDelete(x) {
      unitPrice: $("#unitPri").val(),
      userId: parseInt(userDetails.id)
     }
-   // console.log(data)
     baseUrl = `http://localhost:3000/products/${x}`;
     
     $.ajax(
@@ -71,7 +75,7 @@ function productDelete(x) {
 
 $(document).ready(function() {
   const userId = JSON.parse(userDetails).id;
-  
+  // Load data and fills your Table
   $.get(
     `http://localhost:3000/products?userId=${userId}`,
     function(data) {
@@ -102,15 +106,8 @@ $(document).ready(function() {
     localStorage.clear();
   });
 
-  // var uniqId = (function() {
-  //   var i = 0;
-  //   return function() {
-  //     return i++;
-  //   };
-  // })();
-
+  // Creates a product
   function Product(productName, category, stock, unitPrice, userId) {
-    // this.id = uniqId();
     this.productName = productName;
     this.category = category;
     this.stock = stock;
@@ -118,6 +115,7 @@ $(document).ready(function() {
     this.userId = userId;
   }
 
+  // Post request
   function create(data) {
     let options = {
       method: "POST",
@@ -126,11 +124,11 @@ $(document).ready(function() {
       },
       body: JSON.stringify(data)
     };
-    return fetch(baseUrl, options).then(response => response.json).then(location.reload());
+    return fetch(baseUrl, options).then(response => response.json)//.then(location.reload());
   }
 
   
-
+  // Create a New Product Onclick
   $("#addProduct").click(function() {
     const userDetails = JSON.parse(localStorage.getItem("userDetails"));
     const a = $("#nameP").val();
@@ -143,7 +141,7 @@ $(document).ready(function() {
     baseUrl = "http://localhost:3000/products";
     create(product);
     $("#table").append(
-      `<tr><td>${a}</td><td>${b}</td><td>${c}</td><td>${d}</td>
+      `<tr><td>${a}</td><td>${b}</td><td>${c}</td><td>$${d}</td>
       <td>
       <button type="button"  id="${product.id}" onclick="productDelete(this.id)">Delete</button>
       </td>
@@ -152,5 +150,6 @@ $(document).ready(function() {
       </td>
       <tr>`
     );
+    
   });
 });
