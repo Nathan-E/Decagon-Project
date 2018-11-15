@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-image: linear-gradient(to right, rgb(4, 68, 23), white , rgb(4, 68, 23));
+  background-image: linear-gradient(to right, white , rgb(4, 68, 23));
 }
 
 /* Style the top navigation bar */
@@ -27,8 +27,9 @@ body {
 /* Change color on hover */
 .topnav a:hover {
     /* background-color: rgb(22, 94, 32); */
-    color: black;
+    color: rgb(56, 96, 156);
     font-weight: bolder;
+    font-size: 20px;
 }
 
 #log-out{
@@ -38,6 +39,17 @@ body {
     float: right;
     margin: 10px;
     border: none;
+}
+
+#heading{
+    padding: 5px;
+}
+#list{
+    font-weight: bolder
+}
+
+#list li{
+    padding: 5px;
 }
 
 th, td {
@@ -56,6 +68,7 @@ tr:hover {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 
 /* Create two unequal columns that floats next to each other */
 .column {
