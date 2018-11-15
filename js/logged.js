@@ -14,7 +14,7 @@ function productDelete(x) {
 
     success: function(response) {
       location.reload();
-      // alert("deleted");
+      alert("deleted");
     },
     // error: function() {
     //   alert("error");
@@ -57,8 +57,9 @@ function productDelete(x) {
         method:'PUT',
         data:data,
         success:function(response){
+          alert("Updated");
           location.reload();
-          // alert("Updated");
+          //alert("Updated");
         },
         // error:function(){
         //   alert('Update Aborted')
@@ -80,12 +81,12 @@ $(document).ready(function() {
             data[i].stock
           }</td><td>$${data[i].unitPrice}</td>
           <td>
-          <button type='button' id="${
+          <button class='pro-del' type="button" id="${
             data[i].id
           }" onclick="productDelete(this.id)">Delete</button>
           </td>
           <td>
-          <button type='button' id="${
+          <button type="button" id="${
             data[i].id
           }"  onclick="fillField(this.id)" data-toggle="modal" data-target="#example">Update</button>
           </td>
@@ -101,15 +102,15 @@ $(document).ready(function() {
     localStorage.clear();
   });
 
-  var uniqId = (function() {
-    var i = 0;
-    return function() {
-      return i++;
-    };
-  })();
+  // var uniqId = (function() {
+  //   var i = 0;
+  //   return function() {
+  //     return i++;
+  //   };
+  // })();
 
   function Product(productName, category, stock, unitPrice, userId) {
-    this.id = uniqId();
+    // this.id = uniqId();
     this.productName = productName;
     this.category = category;
     this.stock = stock;
@@ -136,26 +137,24 @@ $(document).ready(function() {
     const b = $("#cate").val();
     const c = $("#stock").val();
     const d = $("#unitP").val();
-    let product = new Product(a, b, c, d, userDetails.id);
+    const e = JSON.stringify(userDetails.id)
+    let product = new Product(a, b, c, d, e);
 
     baseUrl = "http://localhost:3000/products";
     create(product);
     $("#table").append(
       `<tr><td>${a}</td><td>${b}</td><td>${c}</td><td>$${d}</td>
       <td>
-      <button type='button' type='button' id='${
+      <button class='pro-del' type="button"  id="${
         product.id
-      }' onclick='productDelete'(this.id)>Delete</button></a>
+      }" onclick="productDelete(this.id)">Delete</button></a>
       </td>
       <td>
-      <button type='button' id="${
+      <button type="button" id="${
         product.id
       }" onclick="fillField(this.id)" data-toggle="modal" data-target="#example">Update</button>
       </td>
       <tr>`
     );
   });
-
-  
-
 });

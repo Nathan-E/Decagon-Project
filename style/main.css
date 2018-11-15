@@ -9,15 +9,26 @@ body {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    /* float: left; */
-    /* display: inline-flex; */
     color: #f2f2f2;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    padding: 10px 16px;
+    padding: 5px;
     text-decoration: none;
     font-size: 17px;
     font-weight: bolder;
+}
+
+#home{
+    font-size: 30px;
+    background-color: inherit;
+}
+
+.slide-info {
+    font-weight: bolder;
+    background-color: #4CAF50;
+    font-size: 30px;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #login, #signup {
