@@ -145,6 +145,14 @@
       "unitPrice": "8",
       "userId": "4",
       "id": 22
+    },
+    {
+      "productName": "cedcs",
+      "category": "Electronics",
+      "stock": "4",
+      "unitPrice": "5",
+      "userId": "2",
+      "id": 23
     }
   ]
 }

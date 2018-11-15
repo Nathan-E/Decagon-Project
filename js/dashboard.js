@@ -5,6 +5,8 @@ if (!userDetails) {
   window.location.href = "../index.html";
 }
 
+
+
 // Deletes a Product
 function productDelete(x) {
 
@@ -139,7 +141,7 @@ $(document).ready(function() {
     baseUrl = "http://localhost:3000/products";
     create(product);
     $("#table").append(
-      `<tr><td>${a}</td><td>${b}</td><td>${c}</td><td>${d}</td>
+      `<tr><td>${a}</td><td>${b}</td><td>${c}</td><td>$${d}</td>
       <td>
       <button type="button"  id="${product.id}" onclick="productDelete(this.id)">Delete</button>
       </td>
@@ -148,5 +150,6 @@ $(document).ready(function() {
       </td>
       <tr>`
     );
+    
   });
 });
