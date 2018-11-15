@@ -129,6 +129,22 @@
       "stock": "56",
       "unitPrice": "6",
       "userId": "4"
+    },
+    {
+      "id": 20,
+      "productName": "Paper",
+      "category": "Electronics",
+      "stock": "90",
+      "unitPrice": "89",
+      "userId": "4"
+    },
+    {
+      "productName": "ssdds",
+      "category": "Electronics",
+      "stock": "5",
+      "unitPrice": "8",
+      "userId": "4",
+      "id": 22
     }
   ]
 }

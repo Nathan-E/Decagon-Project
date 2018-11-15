@@ -126,7 +126,7 @@ $(document).ready(function() {
       },
       body: JSON.stringify(data)
     };
-    return fetch(baseUrl, options).then(response => response.json);
+    return fetch(baseUrl, options).then(response => response.json).then(location.reload());
   }
 
   
