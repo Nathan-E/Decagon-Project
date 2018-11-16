@@ -2,36 +2,40 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("https://www.osas.com/media/2055/advanced-warehouse-management-software3.jpg");
+    background-color: rgb(161, 113, 40);
     font-family: 'Muli', sans-serif;
     position: relative;
-    opacity: 0.7;
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: inherit;
  }
 
+ #home{
+     color: white;
+     font-weight: bolder;
+ }
 
 #login, #signup {
         float: center;
         background-color: #9989EA;
 }
-
-.e a {
-    float: left;
-    display: block;
-    color:white ;
-    text-align: center;
-    padding: 10px;
+#but{
+    margin-bottom: 19px;
+    border-radius: 6px;
+    padding: 0;
+    background-color: rgb(132, 124, 172); 
+    
+}
+.e a{
     text-decoration: none;
-    font-weight: bold;
-    color: black;
+    color: white; 
 }
 
 .e a:hover {
     /* background-color: rgb(22, 94, 32); */
-    color: rgb(56, 96, 156);
+    color: white;
     font-weight: bolder;
     font-size: 20px;
     text-decoration: none;
@@ -39,11 +43,12 @@ body {
 }
 #log-out{
     color: white;
-    background-color: blue;
-    padding: 5px;
+    background-color: rgb(99, 81, 188);
+    padding: 5px 15px 5px 15px;
     float: right;
     margin: 10px;
     border: none;
+    border-radius: 7px;
 }
 
 .def{
@@ -63,7 +68,7 @@ body {
     width: 100%;
     color: black;
 }
-#heading, #things{
+#heading{
     padding: 5px;
 }
 #list{
@@ -73,6 +78,9 @@ body {
 #list li{
     padding: 5px;
 }
+#things{
+    padding-top: 65px;
+}
 
 th, td {
     padding: 15px;
@@ -81,8 +89,11 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 th {
-    background-color: rgb(132, 124, 172);
-    
+    background-color: rgb(132, 124, 172);  
+}
+#del{
+    height: 5px;
+    width: 5px;
 }
 
 tr:hover {
