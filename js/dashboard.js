@@ -1,7 +1,7 @@
 // Authenticates if User is Signed In
 const userDetails = localStorage.getItem("userDetails");
 if (!userDetails) {
-  alert("Not logged in");
+    swal("Not logged in");
   window.location.href = "../index.html";
 }
 
@@ -18,7 +18,7 @@ function productDelete(x) {
 
     success: function(response) {
       location.reload();
-      alert("deleted");
+      swal("deleted");
     },
     // error: function() {
     //   alert("error");
@@ -61,7 +61,7 @@ function productDelete(x) {
         method:'PUT',
         data:data,
         success:function(response){
-          alert("Updated");
+          swal("Updated", "Succesful !!!", "success");
           location.reload();
           //alert("Updated");
         },
@@ -83,16 +83,16 @@ $(document).ready(function() {
         $("#table").append(
           `<tr><td>${data[i].productName}</td><td>${data[i].category}</td><td>${
             data[i].stock
-          }</td><td>$${data[i].unitPrice}</td>
+          }</td><td>₦${data[i].unitPrice}</td>
           <td>
           <button class='pro-del' type="button" id="${
             data[i].id
-          }" onclick="productDelete(this.id)">Delete</button>
+          }" onclick="productDelete(this.id)"><img src="../img/del1.png" alt="delete"></button>
           </td>
           <td>
           <button type="button" id="${
             data[i].id
-          }"  onclick="fillField(this.id)" data-toggle="modal" data-target="#example">Update</button>
+          }"  onclick="fillField(this.id)" data-toggle="modal" data-target="#example"><img src="../img/upd.png" alt="update"></button>
           </td>
           <tr>`
         );
@@ -141,12 +141,12 @@ $(document).ready(function() {
     baseUrl = "http://localhost:3000/products";
     create(product);
     $("#table").append(
-      `<tr><td>${a}</td><td>${b}</td><td>${c}</td><td>$${d}</td>
+      `<tr><td>${a}</td><td>${b}</td><td>${c}</td><td>₦${d}</td>
       <td>
-      <button type="button"  id="${product.id}" onclick="productDelete(this.id)">Delete</button>
+      <button type="button"  id="${product.id}" onclick="productDelete(this.id)"><img src="../img/del1.png" alt="delete"></button>
       </td>
       <td>
-      <button type="button" id="${product.id}" onclick="fillField(this.id)" data-toggle="modal" data-target="#example">Update</button>
+      <button type="button" id="${product.id}" onclick="fillField(this.id)" data-toggle="modal" data-target="#example"><img src="../img/upd.png" alt="update"></button>
       </td>
       <tr>`
     );

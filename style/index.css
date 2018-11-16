@@ -1,8 +1,7 @@
 body {
-    background-image: url("https://www.osas.com/media/2055/advanced-warehouse-management-software3.jpg");
+    background-image: linear-gradient(45deg,#000, rgba(0,0,0,0.1)), url(https://www.osas.com/media/2055/advanced-warehouse-management-software3.jpg);
     font-family: 'Muli', sans-serif;
     position: relative;
-    opacity: 0.7;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +9,11 @@ body {
     color: black;
  }
 
+#home{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
 
 #login, #signup {
         float: center;
@@ -19,6 +23,7 @@ body {
 .def{
     font-family: 'Muli', sans-serif;
     padding: 250px 100px 100px 100px;
+    color: white;
 }
 
 .def1{
@@ -26,6 +31,7 @@ body {
     padding: 35px 30px ;
     border-radius: 10px;
     margin: 60px 0 60px 0;
+    font-family: 'Muli', sans-serif;
     box-shadow: 10px 5px 5px #E4DBDE;
 }
 

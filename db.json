@@ -35,14 +35,6 @@
   ],
   "products": [
     {
-      "id": 8,
-      "productName": "Dell Laptop",
-      "category": "Electronics",
-      "stock": "6",
-      "unitPrice": "97",
-      "userId": "2"
-    },
-    {
       "id": 1,
       "productName": "Plug",
       "category": "Electronics",
@@ -91,30 +83,6 @@
       "userId": "3"
     },
     {
-      "id": 15,
-      "productName": "Charger",
-      "category": "Computers",
-      "stock": "23",
-      "unitPrice": "45",
-      "userId": "2"
-    },
-    {
-      "id": 16,
-      "productName": "keyboard",
-      "category": "Electronics",
-      "stock": "40",
-      "unitPrice": "34",
-      "userId": "2"
-    },
-    {
-      "id": 17,
-      "productName": "Pen",
-      "category": "Electronics",
-      "stock": "20",
-      "unitPrice": "10",
-      "userId": "2"
-    },
-    {
       "id": 18,
       "productName": "Pen",
       "category": "Electronics",
@@ -147,28 +115,92 @@
       "id": 22
     },
     {
-      "productName": "cedcs",
+      "id": 23,
+      "productName": "Rice",
       "category": "Electronics",
-      "stock": "4",
-      "unitPrice": "5",
-      "userId": "2",
-      "id": 23
+      "stock": "97",
+      "unitPrice": "20000",
+      "userId": "2"
     },
     {
-      "productName": "cxbvb",
-      "category": "Electronics",
-      "stock": "3",
-      "unitPrice": "3",
+      "productName": "Cowpea",
+      "category": "Food Items",
+      "stock": "150",
+      "unitPrice": "15000",
       "userId": "2",
       "id": 24
     },
     {
-      "id": 25,
-      "productName": "trhryyt",
+      "productName": "Bacchus",
+      "category": "Wines",
+      "stock": "100",
+      "unitPrice": "2500",
+      "userId": "2",
+      "id": 25
+    },
+    {
+      "productName": "Calvin Klein Jeans",
+      "category": "Clothing",
+      "stock": "100",
+      "unitPrice": "5000",
+      "userId": "2",
+      "id": 26
+    },
+    {
+      "productName": "Adidas Ultra Tech",
+      "category": "Foot Wear",
+      "stock": "150",
+      "unitPrice": "18000",
+      "userId": "2",
+      "id": 27
+    },
+    {
+      "productName": "LG Television 49-inch",
       "category": "Electronics",
-      "stock": "5",
-      "unitPrice": "7",
+      "stock": "100",
+      "unitPrice": "200000",
+      "userId": "2",
+      "id": 29
+    },
+    {
+      "productName": "Vacuum Cleaner",
+      "category": "Electronics",
+      "stock": "50",
+      "unitPrice": "18500",
+      "userId": "2",
+      "id": 30
+    },
+    {
+      "productName": "iPhone XS Max",
+      "category": "Electronics",
+      "stock": "50",
+      "unitPrice": "780000",
+      "userId": "2",
+      "id": 31
+    },
+    {
+      "id": 32,
+      "productName": "Rice",
+      "category": "Electronics",
+      "stock": "98",
+      "unitPrice": "20000",
       "userId": "2"
+    },
+    {
+      "productName": "Peak",
+      "category": "Food Items",
+      "stock": "300",
+      "unitPrice": "2100",
+      "userId": "2",
+      "id": 33
+    },
+    {
+      "productName": "Nike Blazers",
+      "category": "Foot Wear",
+      "stock": "443",
+      "unitPrice": "19550",
+      "userId": "2",
+      "id": 34
     }
   ]
 }

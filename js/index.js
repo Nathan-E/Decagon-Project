@@ -41,7 +41,7 @@ $(document).ready(function(){
             let user = new User(a ,b , c, d, e);
             baseUrl = "http://localhost:3000/users";
             create(user);
-            alert("Sign Up Successful!!!")
+            swal("Sign Up", "Successful!!!", 'success')
         }
          
       })
