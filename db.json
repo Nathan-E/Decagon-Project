@@ -153,6 +153,22 @@
       "unitPrice": "5",
       "userId": "2",
       "id": 23
+    },
+    {
+      "productName": "cxbvb",
+      "category": "Electronics",
+      "stock": "3",
+      "unitPrice": "3",
+      "userId": "2",
+      "id": 24
+    },
+    {
+      "id": 25,
+      "productName": "trhryyt",
+      "category": "Electronics",
+      "stock": "5",
+      "unitPrice": "7",
+      "userId": "2"
     }
   ]
 }
